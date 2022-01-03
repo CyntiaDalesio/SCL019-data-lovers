@@ -5,18 +5,86 @@
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+<header>
+<h1 id="firstTitle">
+  ジブリの世界
+</h1>
+<img id="totoro" src="https://3.bp.blogspot.com/_jLsKYSAnTts/SvMU3nBj-II/AAAAAAAAA7M/0QIrGCQpB0E/s400/totoro+ghibli+logo.gif"></img>
+<h1 id="secondTitle">
+  Ghibli's World
+</h1>
 
-  <button id="order">ordenar</button>
+
+</header>
+<section> 
+<nav>
+  <select >
+    <option selected value="0"> ordenar por: </option>
+        <optgroup label="Título"> 
+        <option value="1">Alfabeticamente A - Z </option> 
+        <option value="2">Alfabeticamente Z - A</option> 
+       
+    </optgroup> 
+    <optgroup label="Año de lanzamiento"> 
+      <option value="1">Antigua - Reciente</option> 
+      <option value="2">Reciente - Antigua</option>  
+    </optgroup> 
+ </select>
+  
+  
+ <select >
+  <option selected value="0"> Filtrar por: </option>
+      <optgroup label="Director"> 
+      <option value="1">Hayao Miyazaki</option> 
+      <option value="2">Isao Takahata</option> 
+      <option value="3">Yoshifumi Kondō</option> 
+      <option value="3">Gorō Miyazaki</option> 
+      <option value="3">Hiromasa Yonebayashi</option> 
+      <option value="3">Yoshifumi Kondō</option> 
+  </optgroup> 
+  <optgroup label="Año de Lanzamiento"> 
+      <option value="10">1986 a 1991 </option> 
+      <option value="11">1992 a 1997</option> 
+      <option value="12">1998 a 2003</option> 
+      <option value="12">2004 a 2009</option> 
+      <option value="12">2010 a 2015</option> 
+ 
+  </optgroup> 
+</select>
+  
+  </nav>
+
+
+  <!-- <button id="order">ordenar</button> -->
 
   <div id="pepito" class="conteiner">
    
 
   </div>
+
+
+
+
+</section>
+
+<div id="myModal">
+  <div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">x</a>
+      <h4 id="mesagge">Studio Ghibli</h4>
+   
+
+    </div>
+
+  </div>
+</div>
 
 
 

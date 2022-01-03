@@ -1,5 +1,46 @@
-#pepito{
+body {
+  
+    background-image: url('https://pm1.narvii.com/6579/f47c7623d04d601a3f317b539fc1e96f28c4ecc8_hq.jpg');
+    -webkit-background-size: cover; 
+     -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px;
+}
 
+#firstTitle{
+text-align: left;
+font-family: 'Montserrat', sans-serif;
+}
+#secondTitle{
+
+  text-align: right;
+
+}
+
+header{
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Montserrat', sans-serif;
+ background-color: white;
+ 
+}
+nav{
+    background-color: rgb(177, 231, 184);
+    padding: 15px;
+ text-align: right;
+}
+#totoro{
+
+    width: 10%;
+}
+
+
+
+
+#pepito{
+background-color: white;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -15,6 +56,76 @@ margin-left: 20px;
     cursor: pointer;
    
 }
-body {
-    margin-left: 60px;
+
+section {
+    background-image: url('https://pm1.narvii.com/6579/f47c7623d04d601a3f317b539fc1e96f28c4ecc8_hq.jpg');
+    -webkit-background-size: cover; 
+     -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
+
+#myModal{
+    visibility:visible;
+}
+
+.overlay {
+
+    background: rgba(0, 0,0,0.3);
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+    }
+    .overlay.active {
+    
+        visibility: visible;
+    }
+    
+    .popup{
+    background: #f7d8d8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0,0,0.5);
+    border-radius: 3px;
+    font-family:sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: .3s;
+    }
+    .popup .btn-cerrar-popup {
+    
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: rgba(238, 13, 118, 0.733);
+    transition: .3s ease all;
+    }
+    .popup .btn-cerrar-popup:hover{
+        color: black;
+    }
+    
+    .popup form .btn-submit {
+    
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+        border:none;
+        color:#fff;
+        background: #4e704f;
+        border-radius: 3px;
+        cursor:pointer;
+        transition: .3s ease all;
+    }
+    
+    .popup form .btn-submit:hover{
+    background: #204220;
+    
+    
+    }

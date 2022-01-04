@@ -43,8 +43,9 @@ nav{
     flex-direction: row;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
     font-weight:bolder;
-    border: 5px solid rgba(241, 197, 239, 0.541);
+    border: 5px solid rgba(136, 61, 132, 0.541);
     border-radius: 10px;
 }
 
@@ -87,7 +88,7 @@ nav{
     font-family:sans-serif;
     padding: 20px;
     text-align: center;
-    width: 300px;
+    /* width: 300px; */
     transition: .3s;
     }
     .popup .btn-cerrar-popup {
@@ -129,6 +130,11 @@ footer {
     padding: 2%;
     margin-top: 2%;
     background-color: rgba(118, 129, 243, 0.5);
+    font-size: 13px;
 }
 
-   
+   select {
+       border-radius: 5px;
+
+   }
+ 

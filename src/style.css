@@ -79,7 +79,7 @@ nav{
     padding: 20px;
     text-align: center;
     /* width: 300px; */
-    transition: .3s;
+    transition: .5s;
     flex-direction: column;
     align-content:space-between;
 }
@@ -104,21 +104,9 @@ nav{
         color: black;
     }
     
-    .popup form .btn-submit {
-    
-        padding: 0 20px;
-        height: 40px;
-        line-height: 40px;
-        border:none;
-        color:#fff;
-        background: #4e704f;
-        border-radius: 3px;
-        cursor:pointer;
-        transition: .3s ease all;
-    }
-    
-    .popup form .btn-submit:hover{
-    background: #204220;
+
+    h5{
+        font-weight: bolder;
     }
 
 footer {

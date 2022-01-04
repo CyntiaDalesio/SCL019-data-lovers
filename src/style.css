@@ -21,29 +21,31 @@ header{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
- 
+    border-radius: 10px;
 }
 nav{
     display: flex;
-    justify-content: right;
-    padding: 15px;
-    
+    flex-direction: row;
+    flex-basis: auto;
+    border: 5px solid rgba(241, 197, 239, 0.541);
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
 }
 #totoro{
-
-    width: 10%;
+ width: 10%;
 }
 
-
-
-
-#pepito{
+#conteinerFilms{
     background-color:rgba(255, 255, 255, 0.589);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-   
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    border: 5px solid rgba(241, 197, 239, 0.541);
+    border-radius: 10px;
 }
 
 .filmCard{
@@ -119,3 +121,14 @@ nav{
     
     
     }
+
+footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    padding: 2%;
+    margin-top: 2%;
+    background-color: rgba(118, 129, 243, 0.5);
+}
+
+   

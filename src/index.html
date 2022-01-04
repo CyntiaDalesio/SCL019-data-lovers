@@ -25,36 +25,36 @@
 </header>
 <section> 
 <nav>
-  <select >
-    <option selected value="0"> ordenar por: </option>
-        <optgroup label="Título"> 
-        <option value="1">Alfabeticamente A - Z </option> 
-        <option value="2">Alfabeticamente Z - A</option> 
+  <select id="selectSortBy">
+    <option selected value="0"> Sort by: </option>
+        <optgroup label="Title"> 
+        <option id="sortByAZ" >Alphabetically A - Z </option> 
+        <option id="sortByZA " >Alphabetically Z - A</option> 
        
     </optgroup> 
-    <optgroup label="Año de lanzamiento"> 
-      <option value="1">Antigua - Reciente</option> 
-      <option value="2">Reciente - Antigua</option>  
+    <optgroup label="Release year"> 
+      <option id="releaseAncientRecent"  >Ancient - Recent</option> 
+      <option id="releaseRecientAncient" >Recent - Ancient</option>  
     </optgroup> 
  </select>
   
   
- <select >
-  <option selected value="0"> Filtrar por: </option>
-      <optgroup label="Director"> 
-      <option value="1">Hayao Miyazaki</option> 
-      <option value="2">Isao Takahata</option> 
-      <option value="3">Yoshifumi Kondō</option> 
-      <option value="3">Gorō Miyazaki</option> 
-      <option value="3">Hiromasa Yonebayashi</option> 
-      <option value="3">Yoshifumi Kondō</option> 
+ <select id="selectFilterBy">
+  <option selected value="0"> Filter by: </option>
+      <optgroup label="Director" > 
+      <option id="directorHayao" >Hayao Miyazaki</option> 
+      <option id="directorIsao" >Isao Takahata</option> 
+      <option id="directorYoshifumi" >Yoshifumi Kondō</option> 
+      <option id="directorGoro" >Gorō Miyazaki</option> 
+      <option id="directorHiromasa" >Hiromasa Yonebayashi</option> 
+  
   </optgroup> 
-  <optgroup label="Año de Lanzamiento"> 
-      <option value="10">1986 a 1991 </option> 
-      <option value="11">1992 a 1997</option> 
-      <option value="12">1998 a 2003</option> 
-      <option value="12">2004 a 2009</option> 
-      <option value="12">2010 a 2015</option> 
+  <optgroup label="Release year"> 
+      <option id="1986a1991" >1986 a 1991 </option> 
+      <option id="1992a1997" >1992 a 1997</option> 
+      <option id="1998a2003" >1998 a 2003</option> 
+      <option id="2004a2009" >2004 a 2009</option> 
+      <option id="2010a2015" >2010 a 2015</option> 
  
   </optgroup> 
 </select>
@@ -64,7 +64,7 @@
 
   <!-- <button id="order">ordenar</button> -->
 
-  <div id="pepito" class="conteiner">
+  <div id="conteinerFilms" class="conteiner">
    
 
   </div>
@@ -86,7 +86,8 @@
   </div>
 </div>
 
-
+<footer>❤ Copyright <script>document.write(new Date().getFullYear())</script> by
+  <a href="https://github.com/FranciscaValdes">Francisca Valdés</a> && <a href="https://github.com/CyntiaDalesio">Cyntia Dalesio</a>❤</footer>
 
   <script src="main.js" type="module"></script>
 </body>

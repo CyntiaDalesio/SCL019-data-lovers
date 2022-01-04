@@ -1,35 +1,33 @@
 body {
   
-    background-image: url('https://pm1.narvii.com/6579/f47c7623d04d601a3f317b539fc1e96f28c4ecc8_hq.jpg');
-    -webkit-background-size: cover; 
-     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url(img/marnie021.jpg);
+    background-size: 100% 100%;
     padding: 50px;
 }
 
 #firstTitle{
-text-align: left;
-font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
 }
 #secondTitle{
 
-  text-align: right;
+    text-align: right;
 
 }
 
 header{
     display: flex;
- align-items: center;
- justify-content: center;
- font-family: 'Montserrat', sans-serif;
- background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
  
 }
 nav{
-    background-color: rgb(177, 231, 184);
+    display: flex;
+    justify-content: right;
     padding: 15px;
- text-align: right;
+    
 }
 #totoro{
 
@@ -40,30 +38,22 @@ nav{
 
 
 #pepito{
-background-color: white;
+    background-color:rgba(255, 255, 255, 0.589);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
    
 }
 
 .filmCard{
-padding: 20px;
-margin-left: 20px;
+    padding: 20px;
+    margin-left: 20px;
 }
 
 .filmCard:hover{
     cursor: pointer;
    
-}
-
-section {
-    background-image: url('https://pm1.narvii.com/6579/f47c7623d04d601a3f317b539fc1e96f28c4ecc8_hq.jpg');
-    -webkit-background-size: cover; 
-     -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
 }
 
 #myModal{

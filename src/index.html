@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
 </head>
-
+<a name="top"></a>
 <body>
 
 <header>
@@ -28,8 +28,8 @@
   <select id="selectSortBy">
     <option selected value="0"> Sort by: </option>
         <optgroup label="Title"> 
-        <option id="sortByAZ" >Alphabetically A - Z </option> 
-        <option id="sortByZA " >Alphabetically Z - A</option> 
+        <option value="sortByAZ">Alphabetically A - Z </option> 
+        <option value="sortByZA">Alphabetically Z - A</option> 
        
     </optgroup> 
     <optgroup label="Release year"> 
@@ -62,7 +62,6 @@
   </nav>
 
 
-  <!-- <button id="order">ordenar</button> -->
 
   <div id="conteinerFilms" class="conteiner">
    
@@ -95,8 +94,13 @@
   </div>
 </div>
 
+<div class="divBackToTop">
+  <a href="#top" id="backToTop">Back to Top</a>
+</div>
+
+
 <footer>❤ Copyright <script>document.write(new Date().getFullYear())</script> by
-  <a href="https://github.com/FranciscaValdes">Francisca Valdés</a> && <a href="https://github.com/CyntiaDalesio">Cyntia Dalesio</a>❤</footer>
+  <a href="https://github.com/FranciscaValdes" target="_blank">Francisca Valdés</a> && <a href="https://github.com/CyntiaDalesio" target="_blank">Cyntia Dalesio</a>❤</footer>
 
   <script src="main.js" type="module"></script>
 </body>

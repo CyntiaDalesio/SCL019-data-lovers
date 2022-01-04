@@ -27,9 +27,11 @@ nav{
     display: flex;
     flex-direction: row;
     flex-basis: auto;
-    border: 5px solid rgba(241, 197, 239, 0.541);
-    padding: 20px;
-    justify-content: center;
+  background-color: rgba(241, 197, 239, 0.541);
+    /* border: 5px solid rgba(241, 197, 239, 0.541); */
+    
+    padding: 10px;
+    justify-content: right;
     border-radius: 10px;
 }
 #totoro{
@@ -135,6 +137,22 @@ footer {
 
    select {
        border-radius: 5px;
-    size: 10%;
+       display:block;
+      margin-left: 8px;
+       height:42px;
+       /* background-color: rgba(235, 164, 245, 0.5); */
    }
- 
+   select:hover{
+       background-color:rgba(228, 118, 243, 0.9); ;
+   }
+   
+   
+   div a#backToTop{
+
+    color: rgb(7, 3, 10);
+   }
+   .divBackToTop{
+       text-align: right;
+       margin-top: 10px;
+
+   }

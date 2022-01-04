@@ -29,7 +29,7 @@ if (order) {
 
 //recibe los fimls(filtrados u ordenados) y los muestra en pantalla creando sus respectivas etiquetas
 function showFilms(films) {
-    let seccionPoster = document.getElementById('pepito');
+    let seccionPoster = document.getElementById('conteinerFilms');
     seccionPoster.innerHTML = ''; //sin esto, concatenaba otros films
     for (let index = 0; index < films.length; index++) {
         let film = films[index];
@@ -46,7 +46,7 @@ function showFilms(films) {
         seccionPoster.appendChild(newDiv);
         // al elemento seccionPoster que es un div, le asigno el elemento new Element que consta de dos elementos (subnodos)
     }
-};
+}
 
 
 

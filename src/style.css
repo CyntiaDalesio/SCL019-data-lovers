@@ -183,6 +183,7 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: auto;
+    margin: 10%;
 }
 
 .filmCard, .informationCard {
@@ -202,7 +203,7 @@ footer {
 
 
  .filmCard{
-     padding: 1% auto;
+    
      text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -235,6 +236,7 @@ footer {
 .target:hover {
     -webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+  
 }
 
 

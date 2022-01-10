@@ -1,5 +1,5 @@
 import data from './data/ghibli/ghibli.js';
-import { sortByTitle } from './data.js';
+import { filterByDirector, filterByYear, sortByReleaseYear, sortByTitle } from './data.js';
 
 
 
@@ -97,9 +97,55 @@ if(selectSortBy){
             
                 break;
 
+            case 'releaseAncientRecent':
+                orderedFilms = sortByReleaseYear(films, true);
+                break;
+
+            case 'releaseRecientAncient':
+                orderedFilms = sortByReleaseYear(films, false);
+                break;
+
         }
 
         showFilms(orderedFilms);
+      
+
+
+});}
+
+let selectFilterBy = document.getElementById('selectFilterBy');
+if(selectFilterBy){
+    let filterFilms;
+    selectFilterBy.addEventListener('change',function(){
+
+
+        switch (selectFilterBy.value) {
+            case '1986a1991':
+             filterFilms = filterByYear (films, 1986, 1991); //orden ascendente true
+            
+                break;
+        
+            case '1992a1997':
+                filterFilms = filterByYear (films, 1992, 1997); //orden ascendente false
+            
+                break;
+
+            case '1998a2003':
+                filterFilms = filterByYear (films, 1998, 2003);
+                break;
+
+            case '2004a2009':
+                filterFilms = filterByYear(films, 2004, 2009);
+                break;
+             case '2010a2015':
+                filterFilms = filterByYear(films, 2010, 2015);
+                break;
+                
+            default:
+                filterFilms = filterByDirector(films,selectFilterBy.value);
+        }
+
+        showFilms(filterFilms);
       
 
 

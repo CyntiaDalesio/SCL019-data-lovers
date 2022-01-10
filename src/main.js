@@ -47,12 +47,16 @@ function showFilms(films) {
         year.innerHTML = 'Release year:  ' + film.release_date;
         let description = document.createElement('p');
         description.innerHTML ='Synopsis:  ' + film.description;   //  Obteniendo descripcion del film
-        
+        let director = document.createElement('p');
+        director.innerHTML = 'Director: ' + film.director;
+
+
         let newDivBackCard = document.createElement('div');
         newDivBackCard.classList.add('informationCard');
         newDivBackCard.appendChild(elementTitle2);
         newDivBackCard.appendChild(year);
         newDivBackCard.appendChild(description);
+        newDivBackCard.appendChild(director);
 
         //seccionPoster.appendChild(newDivBackCard);
 
@@ -92,6 +96,7 @@ if(selectSortBy){
                orderedFilms = sortByTitle(films, false); //orden ascendente false
             
                 break;
+
         }
 
         showFilms(orderedFilms);

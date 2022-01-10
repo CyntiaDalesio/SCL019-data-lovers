@@ -6,97 +6,108 @@
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap" rel="stylesheet">
 </head>
 <a name="top"></a>
+
 <body>
 
 
-<header>
-<h1 id="firstTitle">
-  ジブリの世界
-</h1>
-<img id="totoro" src="https://3.bp.blogspot.com/_jLsKYSAnTts/SvMU3nBj-II/AAAAAAAAA7M/0QIrGCQpB0E/s400/totoro+ghibli+logo.gif"></img>
-<h1 id="secondTitle">
-  Ghibli's World
-</h1>
-</header>
+  <header>
+    <h1 id="firstTitle">
+      ジブリの世界
+    </h1>
+    <img id="totoro"
+      src="https://3.bp.blogspot.com/_jLsKYSAnTts/SvMU3nBj-II/AAAAAAAAA7M/0QIrGCQpB0E/s400/totoro+ghibli+logo.gif"></img>
+    <h1 id="secondTitle">
+      Ghibli's World
+    </h1>
+  </header>
 
 
-<nav>
-  <select id="selectSortBy">
-    <option selected value="0"> Sort by: </option>
-        <optgroup label="Title"> 
-        <option value="sortByAZ">Alphabetically A - Z </option> 
-        <option value="sortByZA">Alphabetically Z - A</option> 
-       
-    </optgroup> 
-    <optgroup label="Release year"> 
-      <option value="releaseAncientRecent"  >Ancient - Recent</option> 
-      <option value="releaseRecientAncient" >Recent - Ancient</option>  
-    </optgroup> 
- </select>
-  
-  
- <select id="selectFilterBy">
-  <option selected value="0"> Filter by: </option>
-      <optgroup label="Director" > 
-      <option id="directorHayao" >Hayao Miyazaki</option> 
-      <option id="directorIsao" >Isao Takahata</option> 
-      <option id="directorYoshifumi" >Yoshifumi Kondō</option> 
-      <option id="directorGoro" >Gorō Miyazaki</option> 
-      <option id="directorHiromasa" >Hiromasa Yonebayashi</option> 
-  
-  </optgroup> 
-  <optgroup label="Release year"> 
-      <option id="1986a1991" >1986 a 1991 </option> 
-      <option id="1992a1997" >1992 a 1997</option> 
-      <option id="1998a2003" >1998 a 2003</option> 
-      <option id="2004a2009" >2004 a 2009</option> 
-      <option id="2010a2015" >2010 a 2015</option> 
- 
-  </optgroup> 
-</select>
-  
+  <nav>
+    <select id="selectSortBy">
+      <option selected value="0"> Sort by: </option>
+      <optgroup label="Title">
+        <option value="sortByAZ">Alphabetically A - Z </option>
+        <option value="sortByZA">Alphabetically Z - A</option>
+
+      </optgroup>
+      <optgroup label="Release year">
+        <option value="releaseAncientRecent">Ancient - Recent</option>
+        <option value="releaseRecientAncient">Recent - Ancient</option>
+      </optgroup>
+    </select>
+
+
+    <select id="selectFilterBy">
+      <option selected value="0"> Filter by: </option>
+      <optgroup label="Director">
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+
+      </optgroup>
+      <optgroup label="Release year">
+        <option value="1986a1991">1986 a 1991 </option>
+        <option value="1992a1997">1992 a 1997</option>
+        <option value="1998a2003">1998 a 2003</option>
+        <option value="2004a2009">2004 a 2009</option>
+        <option value="2010a2015">2010 a 2015</option>
+
+      </optgroup>
+    </select>
+
   </nav>
 
 
-<section> 
+  <section>
 
-  <div id="conteinerFilms" class="conteiner"> </div>
+    <div id="conteinerFilms" class="conteiner"> </div>
 
-</section>
+  </section>
 
-<div id="myModal">
-  <div class="overlay" id="overlay">
-    <div class="popup" id="popup">
-      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">x</a>
-      
-     
-      <img id="hayaoGif" src="img/Hayao-Miyazaki-Gif.gif" alt="Hayao-Miyazaki-Gif">
-     
-      <p id="mesagge">
+  <div id="myModal">
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">x</a>
+
+
+        <img id="hayaoGif" src="img/Hayao-Miyazaki-Gif.gif" alt="Hayao-Miyazaki-Gif">
+
+        <p id="mesagge">
         <h4 id="mesagge">Hello, you curious! You have entered GHIBLI'S WORLD!</h4>
-        This is a website created to invite you to explore the fascinating world of one of the most famous Japanese animation studios in the world:<span style="font-weight:bold;"> Studio Ghibli</span> .<br>
-        <br>Can you imagine a world full of <span >happiness, fantasy, hope and environmental awareness</span> ?
-       <br> All this and much more is what two great masters,<span > Miyazaki and Isao Takahata</span>  have managed to capture in their works from the creation of the Studio <span style="font-weight:bold;">in 1985</span> to the present day; its Films are dedicated to <em style="font-weight:bold;">"Those who were 10 years old and for those who are going to be 10."</em></p>
-      
+        This is a website created to invite you to explore the fascinating world of one of the most famous Japanese
+        animation studios in the world:<span style="font-weight:bold;"> Studio Ghibli</span> .<br>
+        <br>Can you imagine a world full of <span>happiness, fantasy, hope and environmental awareness</span> ?
+        <br> All this and much more is what two great masters,<span> Miyazaki and Isao Takahata</span> have managed to
+        capture in their works from the creation of the Studio <span style="font-weight:bold;">in 1985</span> to the
+        present day; its Films are dedicated to <em style="font-weight:bold;">"Those who were 10 years old and for those
+          who are going to be 10."</em></p>
+
         <h5>Instructions for the trip to GHIBLI'S WORLD: <br>
-        * * Open your mind and heart * * <br>
-      <p>PS: If you can't, it doesn't matter! Studio Ghibli creations will do it for you  &#128521</h5> </p>
+          * * Open your mind and heart * * <br>
+          <p>PS: If you can't, it doesn't matter! Studio Ghibli creations will do it for you &#128521
+        </h5>
+        </p>
+      </div>
+
     </div>
-
   </div>
-</div>
 
-<div class="divBackToTop">
-  <a href="#top" id="backToTop">Back to Top</a>
-</div>
+  <div class="divBackToTop">
+    <a href="#top" id="backToTop">Back to Top</a>
+  </div>
 
 
-<footer>❤ Copyright <script>document.write(new Date().getFullYear())</script> by
-  <a href="https://github.com/FranciscaValdes" target="_blank">Francisca Valdés</a> && <a href="https://github.com/CyntiaDalesio" target="_blank">Cyntia Dalesio</a>❤</footer>
+  <footer>❤ Copyright
+    <script>document.write(new Date().getFullYear())</script> by
+    <a href="https://github.com/FranciscaValdes" target="_blank">Francisca Valdés</a> && <a
+      href="https://github.com/CyntiaDalesio" target="_blank">Cyntia Dalesio</a>❤
+  </footer>
 
   <script src="main.js" type="module"></script>
 </body>

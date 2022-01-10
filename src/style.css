@@ -236,7 +236,7 @@ footer {
 .target:hover {
     -webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-  
+  cursor: pointer;
 }
 
 

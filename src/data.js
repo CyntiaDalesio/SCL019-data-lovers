@@ -41,3 +41,4 @@ export const sortByTitle = (data, OrderAsc) => {
 }
 
 export default sortByTitle;
+

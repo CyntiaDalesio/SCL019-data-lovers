@@ -171,6 +171,7 @@ footer {
     margin: 10px;
     -webkit-perspective: 800;
     perspective: 800;
+
 }
 
 .target {
@@ -209,7 +210,7 @@ footer {
 
  .filmCard{
     
-     text-align: center;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     }
@@ -243,5 +244,6 @@ footer {
 	transform: rotateY(180deg);
   cursor: pointer;
 }
+
 
 

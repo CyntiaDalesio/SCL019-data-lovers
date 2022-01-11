@@ -14,6 +14,22 @@ cerrarModal.addEventListener('click', function () {
 });
 
 
+//hace clic en cualquier lado incluso dentro del modal
+
+const clickOutModal= document.getElementById('myModal');
+if (clickOutModal) {
+    document.addEventListener('click',function(event){
+         const modal = document.getElementById('myModal');
+ 
+    modal.style.visibility = 'hidden';
+})};
+
+
+
+
+
+
+
 //almacena todos los films en una variable
 let films = data.films;
 //al cargar la pagina muestra los films desordenados

@@ -188,15 +188,14 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: auto;
-    margin: 10%;
+    margin: 5%;
 }
 
 .filmCard, .informationCard {
       
         width: 350px;
         height: 410px;
-
-        position: absolute;
+ position: absolute;
         top: 0;
         left: 0;
         -webkit-backface-visibility: hidden;

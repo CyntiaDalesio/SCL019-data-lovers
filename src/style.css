@@ -220,7 +220,8 @@ footer {
 .informationCard {
     -webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-    padding: 15px;
+    padding-bottom: 25px;
+   
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;

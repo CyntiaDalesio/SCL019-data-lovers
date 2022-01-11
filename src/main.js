@@ -22,7 +22,7 @@ cerrarModal.addEventListener('click', function () {
 //          const modal = document.getElementById('myModal');
  
 //     modal.style.visibility = 'hidden';
-// })}
+// })};
 
 
 
@@ -49,6 +49,7 @@ function showFilms(films) {
         let elementTitle = document.createElement('p'); // creando elemento 'p' para guardar título.
         elementTitle.innerHTML = film.title; //'imprimiendo' data film.title
         let img = document.createElement('img'); //creando elemento 'img'
+        img.classList.add('imgPoster');
         img.src = poster;  //dando ubicación a elemento img para que lo 'traiga'
         newDiv.appendChild(img);
         newDiv.appendChild(elementTitle);   // al nuevo div 'imprime' título

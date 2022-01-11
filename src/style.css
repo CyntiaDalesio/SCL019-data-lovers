@@ -70,15 +70,13 @@ nav{
     background-image: url(img/fondoModal.png);
     background-size: 100% 100%;
     box-shadow: rgba(0, 0, 0, 0.822);
-    border-radius: 3px;
     font-family:sans-serif;
     padding: 20px;
     text-align: center;
     flex-direction: column;
     align-content:space-between;
-   
-    width: 70%;
-    height: 70%;
+    width: 75%;
+    height: 75%;
 }
 
 
@@ -86,28 +84,25 @@ nav{
 
 
 #hayaoGif {
-   height: 40%;
+   height: 50%;
    width: 40%;
    border-radius: 3%;
-   float: left;
-  }
+   float: right;
+   margin: 3%;
+   }
     .popup .btn-cerrar-popup {
     
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 150%;
+    line-height: 20%;
     display: block;
     text-align: right;
-    color: rgba(238, 13, 118, 0.733);
-    transition: .5s ease all;
     }
+
     .popup .btn-cerrar-popup:hover{
-        color: black;
+        color: rgb(33, 11, 238);
     }
     
-   
-
-
-    h5 {
+   h5 {
     font-weight: bolder;
     }
 
@@ -146,6 +141,7 @@ footer {
 
    #message{
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     
    }
 
@@ -160,6 +156,8 @@ footer {
     font-weight:bolder;
     border: 5px solid rgba(136, 61, 132, 0.541);
     border-radius: 10px;
+    margin: 1%;
+    
 }
    
  span {
@@ -168,7 +166,7 @@ footer {
 
 
  .wrapTarget {
-    margin: 10px;
+    margin: 2%;
     -webkit-perspective: 800;
     perspective: 800;
 

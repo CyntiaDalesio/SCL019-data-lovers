@@ -8,7 +8,7 @@
 //   return 'OMG';
 // };
 
-
+//ORDENAR POR TÍTULO
 export const sortByTitle = (data, OrderAsc) => {
 
 
@@ -39,6 +39,8 @@ export const sortByTitle = (data, OrderAsc) => {
   }
 
 };
+
+//ORDENAR POR AÑO
 
 export const sortByReleaseYear = (data, ancientRecent) => {
 
@@ -71,15 +73,19 @@ export const sortByReleaseYear = (data, ancientRecent) => {
 
 }
 
-
+// FILTRAR POR AÑO => método filter
 export const filterByYear = (data, release_date1, release_date2) => {
 let releaseFilms = data.filter(dataFilms => (dataFilms.release_date <= release_date2 && dataFilms.release_date>= release_date1 ));
 return releaseFilms;
 }
+
+//FILTRAR POR DIRECTOR => método filter 
 export const filterByDirector = (data, nameDirector) => {
   let filmsByDirector = data.filter(dataFilms => (dataFilms.director == nameDirector));
 return filmsByDirector;
 }
+
+//EXPORTANDO FUNCIONES A MAIN.JS
 export default sortByTitle; sortByReleaseYear; filterByYear; filterByDirector;
 
 

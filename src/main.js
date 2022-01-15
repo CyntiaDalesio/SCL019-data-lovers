@@ -13,16 +13,34 @@ cerrarModal.addEventListener('click', function () {
    
 });
 
+document.getElementById('btnOpenFilter').addEventListener("click", openFilters);
+function openFilters() {
+
+    const containerFilters = document.getElementById('containerFilters');
+
+   containerFilters.style.display = 'block';
+   }
+
+document.getElementById('btnCerrarFiltro').addEventListener("click",closeFilters);
+function closeFilters(){
+
+    let containerFilters= document.getElementById('containerFilters');
+    containerFilters.style.display = 'none';
+    }
+
+
+
+
 
 //hace clic en cualquier lado incluso dentro del modal
-
-// const clickOutModal= document.getElementById('myModal');
-// if (clickOutModal) {
-//     document.addEventListener('click',function(event){
-//          const modal = document.getElementById('myModal');
+const clickOutModal= document.getElementById('conteinerFilms');
+if (clickOutModal) { 
+    document.addEventListener('click',function(event){
+const modal = document.getElementById('myModal');
  
-//     modal.style.visibility = 'hidden';
-// })};
+modal.style.visibility = 'hidden';
+return event;
+ })}
 
 
 
@@ -95,7 +113,7 @@ function showFilms(films) {
 
 
 
-
+//SELECT= SWITCH CASE PARA ORDENAR ALFABETICAMENTE, POR AÑOS
 
 let selectSortBy= document.getElementById('selectSortBy');
 if(selectSortBy){
@@ -130,6 +148,7 @@ if(selectSortBy){
 
 });}
 
+// SELECT= SWITCH CASE PARA FILTRAR POR RANGO DE AÑOS Y DEFAULT PARA FILTRAR POR DIRECTOR
 let selectFilterBy = document.getElementById('selectFilterBy');
 if(selectFilterBy){
     let filterFilms;

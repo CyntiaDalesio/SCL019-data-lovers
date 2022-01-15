@@ -214,7 +214,6 @@ footer {
     -webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
     padding-bottom: 25px;
-   
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -240,7 +239,4 @@ footer {
 	transform: rotateY(180deg);
   cursor: pointer;
 }
-
-
-
 

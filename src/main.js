@@ -12,6 +12,46 @@ cerrarModal.addEventListener('click', function () {
     modal.style.visibility = 'hidden';
    
 });
+//--------------------------------otra forma
+// filtrado por director con el checkbox
+
+// const unCheck= document.getElementById('unCheck');
+
+// if (unCheck) {
+    
+//     document.addEventListener('click',function(){
+
+//     document.getElementsByClassName("check").checked=false;
+//     });
+// }
+/// --------------------------------------------otra forma
+
+// const inputs= document.getElementsByTagName('input');
+
+// //recorremos los inputs
+// for(var i = 0; i < inputs.length; i++) {
+ 
+//     //si es checkbox aplicamos el valor
+//     if(inputs[i].type == "checkbox") {
+//         inputs[i].checked = false; 
+//     }  
+// }
+
+//-------------------------------------------------
+// const unCheck= document.getElementById('unCheck');
+// const inputs = document.querySelectorAll('.check');
+// if (inputs) {
+//     unCheck.document.addEventListener('click',function(){
+//         for(var i = 0; i < inputs.length; i++) {
+//         if(inputs[i].type == "checkbox") {
+//                 inputs[i].checked = false; 
+
+//         }
+//     }
+
+// });
+// }
+
 
 
 //hace clic en cualquier lado incluso dentro del modal
@@ -131,6 +171,7 @@ if(selectSortBy){
 });}
 
 let selectFilterBy = document.getElementById('selectFilterBy');
+
 if(selectFilterBy){
     let filterFilms;
     selectFilterBy.addEventListener('change',function(){
@@ -166,21 +207,6 @@ if(selectFilterBy){
       
 
 
-});}
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//console.log(example, data);
+}

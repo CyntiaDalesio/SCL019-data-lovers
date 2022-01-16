@@ -11,7 +11,7 @@
 </head>
 <a name="top"></a>
 
-<body>
+<body id="body">
 
 
   <header>
@@ -27,6 +27,44 @@
 
 
   <nav>
+    <p id="hola"></p>
+    <input id='btnOpenFilter' type="button" value="Filter by" onclick="openFilters()">
+    
+    <div id='containerFilters' class="contenedor" style="display: none;">
+      <form name="filters">
+      <label>Director:</label>
+      <br />
+      <input value="Hayao Miyazaki" type="checkbox" id="checkbox"/> Hayao Miyazaki
+      <br />
+      <input value="Isao Takahata" type="checkbox" id="checkbox" /> Isao Takahata
+      <br />
+      <input value="Yoshifumi Kondō" type="checkbox" id="checkbox" /> Yoshifumi Kondō
+      <br />
+      <input value="Gorō Miyazaki" type="checkbox" id="checkbox" /> Gorō Miyazaki
+      <br />
+      <input value="Hiromasa Yonebayashi" type="checkbox" id="checkbox" /> Hiromasa Yonebayashi
+      <br />
+      <input value="Hiroyuki Morita" type="checkbox" id="checkbox" /> Hiroyuki Morita
+      <br />
+      <label>Release year:</label>
+      <br />
+      <input value="1986a1991" type="checkbox" id="checkbox"/> 1986 to 1991
+      <br />
+      <input value="1992a1997" type="checkbox" id="checkbox"/> 1992 to 1997
+      <br />
+      <input value="1998a2003" type="checkbox" id="checkbox"/>1998 to 2003
+      <br />
+      <input value="2004a2009" type="checkbox" id="checkbox"/> 2004 to 2009
+      <br />
+      <input value="2010a2015" type="checkbox" id="checkbox"/> 2010 to 2015
+      <br />
+      <input id='btnCerrarFiltro' type="button" value="Close"  onclick="closeFilters()">
+      <input id='btnFiltrar' type="button" value="Filter"  onclick="obtenerSeleccionados()">
+    </form>
+    </div>
+  
+  </div>
+
     <select id="selectSortBy">
       <option selected value="0"> Sort by: </option>
       <optgroup label="Title">
@@ -44,7 +82,6 @@
     <select id="selectFilterBy">
       <option selected value="0"> Filter by: </option>
       <optgroup label="Director">
-        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
         <option value="Isao Takahata">Isao Takahata</option>
         <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
         <option value="Gorō Miyazaki">Gorō Miyazaki</option>
@@ -53,11 +90,11 @@
 
       </optgroup>
       <optgroup label="Release year">
-        <option value="1986a1991">1986 a 1991 </option>
-        <option value="1992a1997">1992 a 1997</option>
-        <option value="1998a2003">1998 a 2003</option>
-        <option value="2004a2009">2004 a 2009</option>
-        <option value="2010a2015">2010 a 2015</option>
+        <option value="1986a1991">1986 to 1991 </option>
+        <option value="1992a1997">1992 to 1997</option>
+        <option value="1998a2003">1998 to 2003</option>
+        <option value="2004a2009">2004 to 2009</option>
+        <option value="2010a2015">2010 to 2015</option>
 
       </optgroup>
     </select>

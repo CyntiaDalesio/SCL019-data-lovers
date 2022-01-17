@@ -1,34 +1,9 @@
-// import { example, anotherExample } from '../src/data.js';
-
-
-// describe('example', () => {
-//   it('is a function', () => {
-//     expect(typeof example).toBe('function');
-//   });
-
-//   it('returns `example`', () => {
-//     expect(example()).toBe('example');
-//   });
-// });
-
-
-// describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
-
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
-// import data from '../src/data/ghibli/ghibli.js';
 import { sortByTitle, filterByYear, filterByDirector } from '../src/data.js';
 
-// let films = data.film;
+
 //----------------------------Funcion ordenar por titulo-----------------
 
-
-  const data = [
+ const data = [
     {
        "title": "Castle in the Sky",
        "director": "Hayao Miyazaki"
@@ -59,9 +34,10 @@ describe('Funcion sortByTitle ordena todos los films por titulo', () => {
    it('Debería retornar todos los films ordenados en forma descendente', () => {
     
 
-    let OrderDes = sortByTitle(films, false);
-
-//     expect(OrderDes[0].title).toBe('Whisper of the Heart');
+    let OrderDes = sortByTitle(data, false);
+    expect(OrderDes[0].title).toBe('Whisper of the Heart');
+   });
+   
 //     expect(OrderDes[1].title).toBe('When Marnie Was There');
 //     expect(OrderDes[2].title).toBe('The wind Rises');
 //     expect(OrderDes[3].title).toBe('The Tale of the Princess Kaguya');

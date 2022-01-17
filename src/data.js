@@ -73,15 +73,16 @@ export const sortByReleaseYear = (data, ancientRecent) => {
 
 }
 
-// FILTRAR POR AÑO => método filter
-export const filterByYear = (data, release_date1, release_date2) => {
-let releaseFilms = data.filter(dataFilms => (dataFilms.release_date <= release_date2 && dataFilms.release_date>= release_date1 ));
-return releaseFilms;
-}
+
+export const filterByYear = (data, release_dates) => {// release_dates = ['1986','2004']
+  let releaseFilms = data.filter(film => (release_dates.some(year => (film.release_date >= parseInt(year) && film.release_date < parseInt(year)+5  ))));
+  return releaseFilms;
+  }
+
 
 //FILTRAR POR DIRECTOR => método filter 
 export const filterByDirector = (data, nameDirector) => {
-  let filmsByDirector = data.filter(dataFilms => (dataFilms.director == nameDirector));
+  let filmsByDirector = data.filter(dataFilms => (nameDirector.includes(dataFilms.director)));
 return filmsByDirector;
 }
 

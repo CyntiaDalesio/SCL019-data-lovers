@@ -27,43 +27,43 @@
 
 
   <nav>
-    <p id="hola"></p>
-    <input id='btnOpenFilter' type="button" value="Filter by" onclick="openFilters()">
-    
+    <input id='btnOpenFilter' type="button" value="Filter by">
+
     <div id='containerFilters' class="contenedor" style="display: none;">
       <form name="filters">
-      <label>Director:</label>
-      <br />
-      <input value="Hayao Miyazaki" type="checkbox" id="checkbox"/> Hayao Miyazaki
-      <br />
-      <input value="Isao Takahata" type="checkbox" id="checkbox" /> Isao Takahata
-      <br />
-      <input value="Yoshifumi Kondō" type="checkbox" id="checkbox" /> Yoshifumi Kondō
-      <br />
-      <input value="Gorō Miyazaki" type="checkbox" id="checkbox" /> Gorō Miyazaki
-      <br />
-      <input value="Hiromasa Yonebayashi" type="checkbox" id="checkbox" /> Hiromasa Yonebayashi
-      <br />
-      <input value="Hiroyuki Morita" type="checkbox" id="checkbox" /> Hiroyuki Morita
-      <br />
-      <label>Release year:</label>
-      <br />
-      <input value="1986a1991" type="checkbox" id="checkbox"/> 1986 to 1991
-      <br />
-      <input value="1992a1997" type="checkbox" id="checkbox"/> 1992 to 1997
-      <br />
-      <input value="1998a2003" type="checkbox" id="checkbox"/>1998 to 2003
-      <br />
-      <input value="2004a2009" type="checkbox" id="checkbox"/> 2004 to 2009
-      <br />
-      <input value="2010a2015" type="checkbox" id="checkbox"/> 2010 to 2015
-      <br />
-      <input id='btnCloseFilter' type="button" value="Close"  onclick="closeFilters()">
-      <input id='btnFiltrar' type="button" value="Filter"  onclick="obtenerSeleccionados()">
-    </form>
+        <label>Director:</label>
+        <br />
+        <input value="Hayao Miyazaki" type="checkbox" class="FilterDirector check" /> Hayao Miyazaki
+        <br />
+        <input value="Isao Takahata" type="checkbox" class="FilterDirector check" /> Isao Takahata
+        <br />
+        <input value="Yoshifumi Kondō" type="checkbox" class="FilterDirector check" /> Yoshifumi Kondō
+        <br />
+        <input value="Gorō Miyazaki" type="checkbox" class="FilterDirector check" /> Gorō Miyazaki
+        <br />
+        <input value="Hiromasa Yonebayashi" type="checkbox" class="FilterDirector check" /> Hiromasa Yonebayashi
+        <br />
+        <input value="Hiroyuki Morita" type="checkbox" class="FilterDirector check" /> Hiroyuki Morita
+        <br />
+        <label>Release year:</label>
+        <br />
+        <input value="1986" type="checkbox" class="FilterYear check" /> 1986 to 1991
+        <br />
+        <input value="1992" type="checkbox" class="FilterYear check" /> 1992 to 1997
+        <br />
+        <input value="1998" type="checkbox" class="FilterYear check" />1998 to 2003
+        <br />
+        <input value="2004" type="checkbox" class="FilterYear check" /> 2004 to 2009
+        <br />
+        <input value="2010" type="checkbox" class="FilterYear check" /> 2010 to 2015
+        <br />
+        <input id='btnCerrarFiltro' type="button" value="Close">
+        <input id='btnFilter' type="button" value="Filter">
+        <button id="unCheck">Borrar selección</button>
+      </form>
     </div>
-  
-  </div>
+
+    </div>
 
     <select id="selectSortBy">
       <option selected value="0"> Sort by: </option>
@@ -79,26 +79,6 @@
     </select>
 
 
-    <select id="selectFilterBy">
-      <option selected value="0"> Filter by: </option>
-      <optgroup label="Director">
-        <option value="Isao Takahata">Isao Takahata</option>
-        <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-
-      </optgroup>
-      <optgroup label="Release year">
-        <option value="1986a1991">1986 to 1991 </option>
-        <option value="1992a1997">1992 to 1997</option>
-        <option value="1998a2003">1998 to 2003</option>
-        <option value="2004a2009">2004 to 2009</option>
-        <option value="2010a2015">2010 to 2015</option>
-
-      </optgroup>
-    </select>
-
   </nav>
 
 
@@ -109,10 +89,10 @@
   </section>
 
   <div id="myModal">
-    
+
     <div class="overlay" id="overlay">
       <div class="popup" id="popup">
-        
+
         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">❌</a>
 
 
@@ -126,12 +106,12 @@
         <br> All this and much more is what two great masters, Miyazaki and Isao Takahata have managed to
         capture in their works from the creation of the Studio in 1985 to the
         present day; its Films are dedicated to "Those who were 10 years old and for those
-          who are going to be 10."<br>
+        who are going to be 10."<br>
 
-       <br> Instructions for the trip to GHIBLI'S WORLD: <br>
-          * * Open your mind and heart * *
-    <br><br>
-    PS: If you can't, it doesn't matter! Studio Ghibli creations will do it for you &#128521
+        <br> Instructions for the trip to GHIBLI'S WORLD: <br>
+        * * Open your mind and heart * *
+        <br><br>
+        PS: If you can't, it doesn't matter! Studio Ghibli creations will do it for you &#128521
         </p>
       </div>
 

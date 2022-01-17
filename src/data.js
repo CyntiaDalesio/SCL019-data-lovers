@@ -40,6 +40,7 @@ export const sortByTitle = (data, OrderAsc) => {
 
 };
 
+
 //ORDENAR POR AÑO
 
 export const sortByReleaseYear = (data, ancientRecent) => {

@@ -195,7 +195,7 @@ let selectSortBy = document.getElementById('selectSortBy');
 if (selectSortBy) {
     let orderedFilms;
     selectSortBy.addEventListener('change', function () {
-
+        console.log(sortByTitle(filteredYear, true));
 
         switch (selectSortBy.value) {
             case 'sortByAZ':

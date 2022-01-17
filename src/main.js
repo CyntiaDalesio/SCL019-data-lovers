@@ -21,7 +21,7 @@ function openFilters() {
    containerFilters.style.display = 'block';
    }
 
-document.getElementById('btnCerrarFiltro').addEventListener("click",closeFilters);
+document.getElementById('btnCloseFilter').addEventListener("click",closeFilters);
 function closeFilters(){
 
     let containerFilters= document.getElementById('containerFilters');

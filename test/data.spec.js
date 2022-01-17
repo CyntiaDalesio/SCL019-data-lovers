@@ -1,31 +1,22 @@
-// import { example, anotherExample } from '../src/data.js';
+import { sortByTitle, filterByYear,sortByReleaseYear, filterByDirector } from '../src/data.js';
 
 
-// describe('example', () => {
-//   it('is a function', () => {
-//     expect(typeof example).toBe('function');
-//   });
-
-//   it('returns `example`', () => {
-//     expect(example()).toBe('example');
-//   });
-// });
-
-
-// describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
-
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
-import data from './data/ghibli/ghibli.js';
-import { sortByTitle, sortByReleaseYear, filterByYear, filterByDirector } from '../src/data.js';
-
-let films = data.film;
 //----------------------------Funcion ordenar por titulo-----------------
+
+ const data = [
+    {
+       "title": "Castle in the Sky",
+       "director": "Hayao Miyazaki"
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "director": "Hayao Miyazaki"
+},
+{
+  "title": "Kiki's Delivery Service",
+  "director": "Hayao Miyazaki"
+},
+]
 describe('Funcion sortByTitle ordena todos los films por titulo', () => {
   it('is a function', () => {
     expect(typeof sortByTitle).toBe('function');
@@ -33,7 +24,7 @@ describe('Funcion sortByTitle ordena todos los films por titulo', () => {
 
   it('Debería retornar todos los films ordenados en forma ascendente', () => {
 
-    let OrderAsc = sortByTitle(films, true);
+    let OrderAsc = sortByTitle(data, true);
 
     expect(OrderAsc[0].title).toBe('Castle in the sky');
     expect(OrderAsc[1].title).toBe('From Up on Poppy Hill');
@@ -61,29 +52,30 @@ describe('Funcion sortByTitle ordena todos los films por titulo', () => {
   it('Debería retornar todos los films ordenados en forma descendente', () => {
     
 
-    let OrderDes = sortByTitle(films, false);
-
+    let OrderDes = sortByTitle(data, false);
     expect(OrderDes[0].title).toBe('Whisper of the Heart');
-    expect(OrderDes[1].title).toBe('When Marnie Was There');
-    expect(OrderDes[2].title).toBe('The wind Rises');
-    expect(OrderDes[3].title).toBe('The Tale of the Princess Kaguya');
-    expect(OrderDes[4].title).toBe('The Secret World of Arrietty');
-    expect(OrderDes[5].title).toBe('The Cat Returns');
-    expect(OrderDes[6].title).toBe('Tales from Earthsea');
-    expect(OrderDes[7].title).toBe('Spirited Away');
-    expect(OrderDes[8].title).toBe('Princess Mononoke');
-    expect(OrderDes[9].title).toBe('Porco Rosso');
-    expect(OrderDes[10].title).toBe('Ponyo on the Cliff by the Sea');
-    expect(OrderDes[11].title).toBe('Pom Poko');
-    expect(OrderDes[12].title).toBe('Only Yesterday');
-    expect(OrderDes[13].title).toBe('My Neighbors the Yamadas');
-    expect(OrderDes[14].title).toBe('My Neighbor Totoro');
-    expect(OrderDes[15].title).toBe('Kiki\'s Delivery Service');
-    expect(OrderDes[16].title).toBe('Howl\'s Moving Castle');
-    expect(OrderDes[17].title).toBe('Grave of the Fireflies');
-    expect(OrderDes[18].title).toBe('From Up on Poppy Hill');
-    expect(OrderDes[19].title).toBe('Castle in the sky');
-  });
+   });
+   
+//     expect(OrderDes[1].title).toBe('When Marnie Was There');
+//     expect(OrderDes[2].title).toBe('The wind Rises');
+//     expect(OrderDes[3].title).toBe('The Tale of the Princess Kaguya');
+//     expect(OrderDes[4].title).toBe('The Secret World of Arrietty');
+//     expect(OrderDes[5].title).toBe('The Cat Returns');
+//     expect(OrderDes[6].title).toBe('Tales from Earthsea');
+//     expect(OrderDes[7].title).toBe('Spirited Away');
+//     expect(OrderDes[8].title).toBe('Princess Mononoke');
+//     expect(OrderDes[9].title).toBe('Porco Rosso');
+//     expect(OrderDes[10].title).toBe('Ponyo on the Cliff by the Sea');
+//     expect(OrderDes[11].title).toBe('Pom Poko');
+//     expect(OrderDes[12].title).toBe('Only Yesterday');
+//     expect(OrderDes[13].title).toBe('My Neighbors the Yamadas');
+//     expect(OrderDes[14].title).toBe('My Neighbor Totoro');
+//     expect(OrderDes[15].title).toBe('Kiki\'s Delivery Service');
+//     expect(OrderDes[16].title).toBe('Howl\'s Moving Castle');
+//     expect(OrderDes[17].title).toBe('Grave of the Fireflies');
+//     expect(OrderDes[18].title).toBe('From Up on Poppy Hill');
+//     expect(OrderDes[19].title).toBe('Castle in the sky');
+//   });
 
 
 });
@@ -94,7 +86,7 @@ describe('Ordena los films por año de lanzamieneto del mas reciente al mas anti
   it('is a function', () => {
     expect(typeof sortByReleaseYear).toBe('function');
 
-    let OrderAscYear = sortByReleaseYear(films, false);
+    let OrderAscYear = sortByReleaseYear(data, false);
 
     expect(OrderAscYear[0].title).toBe('When Marnie Was There');
     expect(OrderAscYear[1].title).toBe('The wind Rises');
@@ -127,7 +119,7 @@ describe('Ordena los films por año de lanzamieneto del mas reciente al mas anti
   it('is a function', () => {
     expect(typeof sortByReleaseYear).toBe('function');
 
-    let OrderDesYear = sortByReleaseYear(films, true);
+    let OrderDesYear = sortByReleaseYear(data, true);
 
     expect(OrderDesYear[0].title).toBe('Castle in The Sky');
     expect(OrderDesYear[1].title).toBe('Grave of the Fireflies');

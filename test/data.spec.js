@@ -21,7 +21,7 @@
 //     expect(anotherExample()).toBe('OMG');
 //   });
 // });
-import data from './data/ghibli/ghibli.js';
+import data from '../src/data/ghibli/ghibli.js';
 import { sortByTitle, sortByReleaseYear, filterByYear, filterByDirector } from '../src/data.js';
 
 let films = data.film;

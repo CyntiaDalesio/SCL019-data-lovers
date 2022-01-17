@@ -71,6 +71,7 @@ function closeFilters() {
 
 //hace clic en cualquier lado incluso dentro del modal
 const clickOutModal = document.getElementById('conteinerFilms');
+
 if (clickOutModal) {
     document.addEventListener('click', function (event) {
         const modal = document.getElementById('myModal');

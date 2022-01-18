@@ -7,7 +7,7 @@ let films = data.films;
 //al cargar la pagina muestra los films desordenados
 showFilms(films);
 
-var filteredYear=films;
+var filteredYear = films;
 //---------------------------------------------
 
 const cerrarModal = document.getElementById('btn-cerrar-popup');
@@ -26,26 +26,26 @@ const unCheck = document.getElementById('unCheck');
 
 if (unCheck) {
 
-    unCheck.addEventListener('click',deleteSelection);
+    unCheck.addEventListener('click', deleteSelection);
 }
-    
-    //---------------------------funcion para eliminar seleccion
-    function deleteSelection() {
+
+//---------------------------funcion para eliminar seleccion
+function deleteSelection() {
 
 
-        //byclassname me devuelve un array
+    //byclassname me devuelve un array
 
-        let array = document.getElementsByClassName("check");
+    let array = document.getElementsByClassName("check");
 
-        for (var i = 0; i < array.length; i++) {
+    for (var i = 0; i < array.length; i++) {
 
-            //si es checkbox aplicamos el valor
-            if (array[i].type == "checkbox") {
-                array[i].checked = false;
-            }
+        //si es checkbox aplicamos el valor
+        if (array[i].type == "checkbox") {
+            array[i].checked = false;
         }
-        return;
     }
+    return;
+}
 //-----------------------------------------------
 
 document.getElementById('btnOpenFilter').addEventListener("click", openFilters);
@@ -100,9 +100,9 @@ if (filterMultiple) {
             }
         }
 
-        let filtered = valuesDirector.length > 0 ? filterByDirector(films, valuesDirector) : films; 
+        let filtered = valuesDirector.length > 0 ? filterByDirector(films, valuesDirector) : films;
 
-   
+
 
         let year = document.getElementsByClassName('FilterYear');
 
@@ -114,11 +114,11 @@ if (filterMultiple) {
                 valueYear.push(year[j].value);
             }
         }
-    
-        
-         filteredYear = valueYear.length > 0 ? filterByYear(filtered,valueYear) : filtered; 
 
-   
+
+        filteredYear = valueYear.length > 0 ? filterByYear(filtered, valueYear) : filtered;
+
+
         showFilms(filteredYear);
 
 

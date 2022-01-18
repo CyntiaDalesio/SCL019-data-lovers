@@ -1,25 +1,27 @@
 body {
-  
+
     background-image: url(img/marnie021.jpg);
     background-size: 100% 100%;
     padding: 50px;
 }
-p{
+
+p {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    }
+}
 
-#firstTitle{
+#firstTitle {
     text-align: left;
     font-family: 'Montserrat', sans-serif;
 }
-#secondTitle{
+
+#secondTitle {
 
     text-align: right;
 
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,59 +29,62 @@ header{
     background-color: white;
     border-radius: 10px;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     flex-basis: auto;
-  background-color: rgba(241, 197, 239, 0.541);
+    background-color: rgba(241, 197, 239, 0.541);
     /* border: 5px solid rgba(241, 197, 239, 0.541); */
-    
+
     padding: 10px;
     justify-content: right;
     border-radius: 10px;
 }
-#totoro{
- width: 10%;
+
+#totoro {
+    width: 10%;
 }
 
-.filmCard{
+.filmCard {
     padding: 20px;
     margin-left: 20px;
 }
 
 
-#myModal{
-    visibility:visible;
+#myModal {
+    visibility: visible;
     font-weight: bolder;
     text-align: left;
 }
 
 .overlay {
 
-    background: rgba(0, 0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
-    .overlay.active {
-        visibility: visible;
-    }
-    
-    .popup, .popup:target {   
-      
-    border-radius: 3%;   
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup, .popup:target {
+
+    border-radius: 3%;
     background-image: url(img/fondoModal.png);
     background-size: 100% 100%;
     box-shadow: rgba(0, 0, 0, 0.822);
-    font-family:sans-serif;
+    font-family: sans-serif;
     padding: 20px;
     flex-direction: column;
-    align-content:space-between;
+    align-content: space-between;
     width: 75%;
     height: 75%;
     text-align: justify;
@@ -90,77 +95,81 @@ nav{
 
 
 #hayaoGif {
-   height: 50%;
-   width: 40%;
-   border-radius: 3%;
-   float: right;
-   margin: 3%;
-   }
-    .popup .btn-cerrar-popup {
-    
+    height: 50%;
+    width: 40%;
+    border-radius: 3%;
+    float: right;
+    margin: 3%;
+}
+
+.popup .btn-cerrar-popup {
+
     font-size: 150%;
     line-height: 20%;
     display: block;
     text-align: right;
-    }
+}
 
-    .popup .btn-cerrar-popup:hover{
-        color: rgb(33, 11, 238);
-    }
-    
+.popup .btn-cerrar-popup:hover {
+    color: rgb(33, 11, 238);
+}
+
 
 
 footer {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight:bolder;
+    font-weight: bolder;
     padding: 2%;
     margin-top: 2%;
     background-color: rgba(118, 129, 243, 0.5);
     font-size: 13px;
 }
 
-   select {
-       border-radius: 5px;
-       display:block;
-      margin-left: 8px;
-       height:42px;
-      
-   }
-   select:hover{
-       background-color:rgba(228, 118, 243, 0.9); ;
-   }
-   
-   
-   div a#backToTop{
+select {
+    border-radius: 5px;
+    display: block;
+    margin-left: 8px;
+    height: 42px;
+
+}
+
+select:hover {
+    background-color: rgba(228, 118, 243, 0.9);
+    ;
+}
+
+
+div a#backToTop {
 
     color: rgb(7, 3, 10);
-   }
-   .divBackToTop{
-       text-align: right;
-       margin-top: 10px;
+}
 
-   }
-      
+.divBackToTop {
+    text-align: right;
+    margin-top: 10px;
 
-  
-   #conteinerFilms{
-    background-color:rgba(255, 255, 255, 0.589);
+}
+
+
+
+#conteinerFilms {
+    background-color: rgba(255, 255, 255, 0.589);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-    font-weight:bolder;
+    font-weight: bolder;
     border: 5px solid rgba(136, 61, 132, 0.541);
     border-radius: 10px;
     margin: 1%;
-    
+
 }
 
 
- .wrapTarget {
+.wrapTarget {
     margin: 2%;
     -webkit-perspective: 800;
     perspective: 800;
@@ -169,14 +178,14 @@ footer {
 
 .target {
     width: 350px;
-	height: 400px;
-	position: relative;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transition: .7s ease;
-	transition: .7s ease;
-	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
-	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    height: 400px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -185,58 +194,63 @@ footer {
 }
 
 .filmCard, .informationCard {
-      
-        width: 350px;
-        height: 410px;
- position: absolute;
-        top: 0;
-        left: 0;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        justify-content: center;
+
+    width: 350px;
+    height: 410px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: auto;
+    
 
-    }
+}
+
 .imgPoster {
     width: 350px;
     height: 400px;
 }
 
- .filmCard{
-     text-align: center;
+.filmCard {
+    text-align: center;
     flex-direction: column;
     justify-content: center;
-    }
+}
 
 .informationCard {
     -webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
     padding-bottom: 25px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     color: black;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     background-color: rgb(253, 247, 247);
     flex-direction: column;
 
-}   
+}
 
 .target:hover {
     -webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-  cursor: pointer;
+    transform: rotateY(180deg);
+    cursor: pointer;
 }
 
+#message1 {
+    margin: 3%;
+}

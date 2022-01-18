@@ -75,8 +75,6 @@ describe('Ordena los films por año de lanzamiento del mas reciente al mas antig
     let OrderAscYear = sortByReleaseYear(data, false);
     expect(OrderAscYear[0].title).toBe('From Up on Poppy Hill');
     expect(OrderAscYear[1].title).toBe('My Neighbor Totoro');
-   
-    
     expect(OrderAscYear[2].title).toBe('Castle in the Sky');
     expect(OrderAscYear[3].title).toBe('Kiki\'s Delivery Service');
    

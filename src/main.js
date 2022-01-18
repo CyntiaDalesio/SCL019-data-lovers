@@ -196,6 +196,7 @@ if (selectSortBy) {
     let orderedFilms;
     selectSortBy.addEventListener('change', function () {
 
+
         switch (selectSortBy.value) {
             case 'sortByAZ':
                 orderedFilms = sortByTitle(filteredYear, true); //orden ascendente true

@@ -210,6 +210,8 @@ div a#backToTop {
 
 }
 
+
+
 .imgPoster {
     width: 350px;
     height: 400px;
@@ -251,6 +253,21 @@ div a#backToTop {
     cursor: pointer;
 }
 
-#message1 {
-    margin: 3%;
-}
+/* @media screen and (max-width: 320px){
+    .card {
+    width: 260px;
+    height: 350px;
+    margin: 20px 11px;
+  }
+  
+  .to-top {
+    right: 19px;
+    width: 45px;
+    height: 45px;  
+  }
+  
+  .to-top.active {
+    bottom: 26px;
+  }
+  
+  } */

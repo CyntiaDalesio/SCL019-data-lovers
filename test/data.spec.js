@@ -13,7 +13,7 @@ const data = [
   {
     "title": "My Neighbor Totoro",
     "director": "Hayao Miyazaki",
-    "release_date": "1995"
+    "release_date": "1999"
   },
   {
     "title": "Kiki's Delivery Service",
@@ -89,8 +89,9 @@ describe('Ordena los films por año de lanzamiento del mas reciente al mas antig
 
     expect(OrderDesYear[0].title).toBe('Kiki\'s Delivery Service');
     expect(OrderDesYear[1].title).toBe('Castle in the Sky');
-    expect(OrderDesYear[2].title).toBe('My Neighbor Totoro');
-    expect(OrderDesYear[3].title).toBe('From Up on Poppy Hill');
+    expect(OrderDesYear[2].title).toBe('From Up on Poppy Hill');
+    expect(OrderDesYear[3].title).toBe('My Neighbor Totoro');
+    
 
 
   });
@@ -127,8 +128,9 @@ let director = filterByDirector(data,["Hayao Miyazaki"]);
     
         expect(director[0].title).toEqual('Kiki\'s Delivery Service');
         expect(director[1].title).toEqual('Castle in the Sky');
-        expect(director[2].title).toEqual('My Neighbor Totoro');
-        expect(director[3].title).toEqual('From Up on Poppy Hill');
+        expect(director[2].title).toEqual('From Up on Poppy Hill');
+        expect(director[3].title).toEqual('My Neighbor Totoro');
+        
     
       });
 
@@ -153,13 +155,15 @@ describe('Funcion filterByYear filtra todos los films por año seleccionado', ()
 
   it('Debería retornar todos los films de los años seleccionado', () => {
 
-    let year = filterByYear(data, ['1800','1995']);
+    let year = filterByYear(data, ['1800','1999']);
 
     expect(year[0].title).toBe('Kiki\'s Delivery Service');
-    expect(year[1].title).toBe('My Neighbor Totoro');
-   
+    expect(year[1].title).toBe('From Up on Poppy Hill');
+    expect(year[2].title).toBe('My Neighbor Totoro');
     
 
+    
+    
   });
 
 

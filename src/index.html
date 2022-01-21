@@ -27,11 +27,11 @@
 
 
   <nav>
-    <input id='btnOpenFilter' type="button" value="Filter by">
+    <input id="btnOpenFilter" type="button" value="Filter by" class="btnNav">
 
-    <div id='containerFilters' class="contenedor" style="display: none;">
+    <div id='containerFilters' style="display: none;" class="btnNav">
       <form name="filters">
-        <label>Director:</label>
+        <label class="FilterDirector check">Director:</label>
         <br />
         <input value="Hayao Miyazaki" type="checkbox" class="FilterDirector check" /> Hayao Miyazaki
         <br />
@@ -45,7 +45,7 @@
         <br />
         <input value="Hiroyuki Morita" type="checkbox" class="FilterDirector check" /> Hiroyuki Morita
         <br />
-        <label>Release year:</label>
+        <label class="FilterYear check">Release year:</label>
         <br />
         <input value="1986" type="checkbox" class="FilterYear check" /> 1986 to 1991
         <br />
@@ -57,24 +57,24 @@
         <br />
         <input value="2010" type="checkbox" class="FilterYear check" /> 2010 to 2015
         <br />
-        <input id='btnCerrarFiltro' type="button" value="Close">
-        <input id='btnFilter' type="button" value="Filter">
-        <button id="unCheck">Borrar selección</button>
+        <input id='btnCerrarFiltro' type="button" value="Close" class="btnNav">
+        <input id='btnFilter' type="button" value="Filter" class="btnNav">
+        <button id="unCheck" class="btnNav">Borrar selección</button>
       </form>
     </div>
 
     </div>
 
-    <select id="selectSortBy">
-      <option selected value="0"> Sort by: </option>
-      <optgroup label="Title">
-        <option value="sortByAZ">Alphabetically A - Z </option>
-        <option value="sortByZA">Alphabetically Z - A</option>
+    <select id="selectSortBy" class="btnNav">
+      <option class="btnNav" selected value="0"> Sort by: </option>
+      <optgroup class="btnNav" label="Title">
+        <option class="btnNav" value="sortByAZ">Alphabetically A - Z </option>
+        <option class="btnNav" value="sortByZA">Alphabetically Z - A</option>
 
       </optgroup>
-      <optgroup label="Release year">
-        <option value="releaseAncientRecent">Ancient - Recent</option>
-        <option value="releaseRecientAncient">Recent - Ancient</option>
+      <optgroup class="btnNav" label="Release year">
+        <option class="btnNav" value="releaseAncientRecent">Ancient - Recent</option>
+        <option class="btnNav" value="releaseRecientAncient">Recent - Ancient</option>
       </optgroup>
     </select>
 

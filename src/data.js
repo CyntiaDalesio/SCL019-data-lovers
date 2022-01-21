@@ -11,10 +11,10 @@
 //ORDENAR POR TÍTULO
 export const sortByTitle = (data, OrderAsc) => {
 
-
-
+  let dataCopyAsc=data;
+  let dataCopyDes=data;
   if (OrderAsc) {
-    return data.sort(function (a, b) {
+    return dataCopyAsc.sort(function (a, b) {
       //al ser String ni number no puedo hacer un sort directo
       //la funcion recibe un array de films
       //tengo que hacer una funcion que me compare los titulos de dos films cada vez
@@ -24,26 +24,21 @@ export const sortByTitle = (data, OrderAsc) => {
       if (a.title < b.title) {
         return -1;
       }
-      // if (a.title == b.title) {
-      //   return 0;
-      // }
-      // return 0;//----
+     
     });
   } else {
-    return data.sort(function (a, b) {
+    return dataCopyDes.sort(function (a, b) {
+      
+      if (a.title < b.title) {
      
-      if (a.title < b.title) { //-----------
         return 1;
       }
+      if (a.title > b.title) {
       
-      if (a.title >= b.title) {
         return -1;
       }
       
-      // if (a.title == b.title) { //-----------
-      //   return 0;
-      // }
-      // return 0;//------------
+      
     });
 
   }
@@ -55,9 +50,12 @@ export const sortByTitle = (data, OrderAsc) => {
 
 export const sortByReleaseYear = (data, ancientRecent) => {
 
+let dataAncient=data;
+let dataRecent=data;
+
 
   if (ancientRecent) {
-    return data.sort(function (a, b) {
+    return dataAncient.sort(function (a, b) {
       //al ser String ni number no puedo hacer un sort directo
       //la funcion recibe un array de films
       //tengo que hacer una funcion que me compare los titulos de dos films cada vez
@@ -70,7 +68,7 @@ export const sortByReleaseYear = (data, ancientRecent) => {
       // return 0;//---------------
     });
   } else {
-    return data.sort(function (a, b) {
+    return dataRecent.sort(function (a, b) {
       if (a.release_date >= b.release_date) {
         return -1;
       }

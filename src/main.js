@@ -20,7 +20,7 @@ cerrarModal.addEventListener('click', function () {
 
 });
 //--------------------------------
-// filtrado por director con el checkbox
+
 
 const unCheck = document.getElementById('unCheck');
 

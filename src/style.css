@@ -5,10 +5,8 @@ background-image: url(img/___spirited_away_haku_dragon____by_cupkate98_dduaxpu-f
     background-size: cover;
     background-position: center;
     padding: 50px;
-    background-color: rgb(111, 201, 236);
 
-    
-}
+    }
 
 p {
     font-family: 'Montserrat', sans-serif;
@@ -317,12 +315,28 @@ div a#backToTop {
     width: 260px;
     height: 350px;
     margin: 20px 11px;
+    margin-left: 2%;
+    padding: 3%;
   }
   
+  .wrapTarget {
+margin: ;
+
+  }
+
+
+
+
   .btnNav {
     width: 20px;
     height: 20px;
   }
 
-
+  .popup {
+    height: 100%;
   }
+
+  body {
+    background: linear-gradient(to bottom, rgba(97, 198, 238, 0.678), rgba(40, 241, 241, 0.644));
+  }
+ }

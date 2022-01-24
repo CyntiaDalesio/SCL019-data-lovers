@@ -5,6 +5,8 @@ background-image: url(img/___spirited_away_haku_dragon____by_cupkate98_dduaxpu-f
     background-size: cover;
     background-position: center;
     padding: 50px;
+    background-color: rgb(111, 201, 236);
+
     
 }
 
@@ -321,4 +323,6 @@ div a#backToTop {
     width: 20px;
     height: 20px;
   }
+
+
   }

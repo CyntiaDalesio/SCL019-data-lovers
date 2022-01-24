@@ -36,9 +36,8 @@ nav {
     display: flex;
     flex-direction: row;
     flex-basis: auto;
-    padding: 10px;
+    padding: 1%;
     justify-content: right;
-    border-radius: 10px;
     margin:3%
 }
 
@@ -49,8 +48,8 @@ nav {
 }
 
 .filmCard {
-    padding: 20px;
-    margin-left: 20px;
+    padding: 10%;
+    margin-left: 10%;
 }
 
 
@@ -84,7 +83,7 @@ nav {
     background-size: 100% 100%;
     box-shadow: rgba(0, 0, 0, 0.822);
     font-family: sans-serif;
-    padding: 20px;
+    padding: 1%;
     flex-direction: column;
     align-content: space-between;
     width: 75%;
@@ -124,20 +123,21 @@ footer {
     font-weight: bolder;
     padding: 2%;
     margin-top: 2%;
-    background-color: rgba(118, 129, 243, 0.082);
-    font-size: 13px;
+    background-color: rgba(118, 239, 243, 0.685);
+    font-size: 100%;
 }
 
 
 
 div a#backToTop {
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     color: rgb(7, 3, 10);
 }
 
 .divBackToTop {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 5%;
 
 }
 
@@ -153,8 +153,8 @@ div a#backToTop {
     font-size: 13px;
     font-weight: bolder;
     border: 5px solid  white;
-    border-radius: 10px;
-    margin: 1%;
+    margin-bottom: 5%;
+    padding: 5%;
 
 }
 
@@ -180,7 +180,7 @@ div a#backToTop {
     padding: auto;
     margin: 5%;
     background-color: white;
-    border-radius: 3%s;
+    border-radius: 3%;
    
 }
 
@@ -218,6 +218,8 @@ div a#backToTop {
     flex-direction: column;
     justify-content: center;
     border-radius: 3%;
+    width: 350px;
+    height: 430px;
     
 }
 
@@ -245,8 +247,8 @@ div a#backToTop {
     border-radius: 3%;
     font-size: 110%;
     text-align: justify;
-    width: 360px;
-    
+    width: 366px;
+    height: 435px;
     
 
 
@@ -265,8 +267,8 @@ div a#backToTop {
     flex-direction: row;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    border-radius: 4%;
     font-size: 110%;
+    padding: 1%;
 
 
 }
@@ -281,13 +283,12 @@ div a#backToTop {
 
 .btnNav:hover {
     background-color: white;
-    border-color: 7px solid rgb(8, 238, 238);
+
 
 }
 
 .FilterYearcheck, .FilterDirectorcheck {
-    flex-direction: row;
-    order: 2;
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     border-radius: 3%;
@@ -295,21 +296,29 @@ div a#backToTop {
     width: 80%;
 }
 
-/* @media screen and (max-width: 320px){
-    .card {
+.title {
+    color: blanchedalmond;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.description {
+    padding: 3%;
+}
+
+.title2 {
+    padding-top: 5%;
+}
+
+ @media screen and (max-width: 320px){
+    .target {
     width: 260px;
     height: 350px;
     margin: 20px 11px;
   }
   
-  .to-top {
-    right: 19px;
-    width: 45px;
-    height: 45px;  
+  .btnNav {
+    width: 20px;
+    height: 20px;
   }
-  
-  .to-top.active {
-    bottom: 26px;
   }
-  
-  } */

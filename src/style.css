@@ -319,11 +319,7 @@ div a#backToTop {
     padding: 3%;
   }
   
-  .wrapTarget {
-margin: 20%;
-  }
-
-
+ 
 
 
   .btnNav {
@@ -331,12 +327,24 @@ margin: 20%;
     height: 20px;
   }
 
-  .popup {
-    height: 100%;
+  .popup, .popup:target {
+    height: 25%;
     display: flex;
   }
 
   body {
     background: linear-gradient(to bottom, rgba(97, 198, 238, 0.678), rgba(40, 241, 241, 0.644));
   }
+  .wrapTarget {
+    margin: 20%;
+      }
+    
+      #conteinerFilms {
+
+display: block;
+
+
+      }    
+
+
  }

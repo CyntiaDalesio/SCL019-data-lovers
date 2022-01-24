@@ -27,20 +27,8 @@ export const sortByTitle = (data, OrderAsc) => {
      
     });
   } else {
-    return dataCopyDes.sort(function (a, b) {
-      
-      if (a.title < b.title) {
-     
-        return 1;
-      }
-      if (a.title > b.title) {
-      
-        return -1;
-      }
-      
-      
-    });
-
+    return dataCopyDes.sort((a,b)=> ((a.title<b.title) ? 1:-1));
+   
   }
 
 };

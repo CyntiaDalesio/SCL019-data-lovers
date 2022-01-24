@@ -322,25 +322,3 @@ div a#backToTop {
     height: 20px;
   }
   }
-<<<<<<< HEAD
-  
-  } */
-
-  
-/* Diseño para tabletas */ 
-@media screen and (min-width: 800px) {
-	#columna1, #columna2 {
-		float:left;
-		width:50%;
-	}
-}
-
-/* Diseño para PC */ 
-@media screen and (min-width: 1025px) {
-	#columna1, #columna2, #columna3 {
-	float:left;
-	width:33%;
-}
-}
-=======
->>>>>>> 54cc4290007525da4a0a31578ec3f1922ca4dc83

@@ -84,15 +84,15 @@ let dataRecent=data;
 
 
 export const filterByYear = (data, release_dates) => {// release_dates = ['1986','2004']
-  let releaseFilms = data.filter(film => (release_dates.some(year => (film.release_date >= parseInt(year) && film.release_date < parseInt(year)+5  ))));
+  let releaseFilms = data.filter(film => (release_dates.some(year => (film.release_date >= parseInt(year) && film.release_date < parseInt(year) + 5))));
   return releaseFilms;
-  }
+}
 
 
 //FILTRAR POR DIRECTOR => método filter 
 export const filterByDirector = (data, nameDirector) => {
   let filmsByDirector = data.filter(dataFilms => (nameDirector.includes(dataFilms.director)));
-return filmsByDirector;
+  return filmsByDirector;
 }
 
 //EXPORTANDO FUNCIONES A MAIN.JS

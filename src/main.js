@@ -127,7 +127,7 @@ if (filterMultiple) {
 
 
 
-//mostrar los films ordenador por orden alfabetico
+//mostrar los films ordenados por orden alfabetico
 
 
 //recibe los fimls(filtrados u ordenados) y los muestra en pantalla creando sus respectivas etiquetas
@@ -147,16 +147,19 @@ function showFilms(films) {
         img.src = poster;  //dando ubicación a elemento img para que lo 'traiga'
         newDiv.appendChild(img);
         newDiv.appendChild(elementTitle);   // al nuevo div 'imprime' título
+        elementTitle.classList.add('title');
         // al nuevo div 'imprime' img poster
         //al elemento newElement le asigno dos elementos, un p y un img
         // seccionPoster.appendChild(newDiv);
         // al elemento seccionPoster que es un div, le asigno el elemento new Element que consta de dos elementos (subnodos)
 
         let elementTitle2 = document.createElement('p');
+        elementTitle2.classList.add('title2');
         elementTitle2.innerHTML = 'Title:  ' + film.title;
         let year = document.createElement('p');
         year.innerHTML = 'Release year:  ' + film.release_date;
         let description = document.createElement('p');
+        description.classList.add('description');
         description.innerHTML = 'Synopsis:  ' + film.description;   //  Obteniendo descripcion del film
         let director = document.createElement('p');
         director.innerHTML = 'Director: ' + film.director;
@@ -218,7 +221,9 @@ if (selectSortBy) {
 
         }
 
-        showFilms(orderedFilms);
+        showFilms(orderedFilms)
+           
+        
 
 
 

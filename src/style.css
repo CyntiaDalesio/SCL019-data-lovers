@@ -313,3 +313,20 @@ div a#backToTop {
   }
   
   } */
+
+  
+/* Diseño para tabletas */ 
+@media screen and (min-width: 800px) {
+	#columna1, #columna2 {
+		float:left;
+		width:50%;
+	}
+}
+
+/* Diseño para PC */ 
+@media screen and (min-width: 1025px) {
+	#columna1, #columna2, #columna3 {
+	float:left;
+	width:33%;
+}
+}

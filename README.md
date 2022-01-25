@@ -36,8 +36,18 @@ Las historias de usuarios desarrolladas a través de 4 sprint fueron:
 
 ## 3. Prototipo de baja y alta fidelidad
 
- 
+ 1- Prototipo Baja Fidelidad 
 
+
+ ![imagen](prototipos/prototipoBajaFidelidad.jpeg)
+
+ ![imagen](prototipos/prototipoBajaFidelidad2.jpeg)
+
+ 2- Prototipo Alta Fidelidad 
+
+ ![imagen](prototipos/prototipoAltaFidelidad.jpeg)
+
+ ![imagen](prototipos/prototipoAltaFidelidad2.jpeg)
 
 
 

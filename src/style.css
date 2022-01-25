@@ -341,7 +341,7 @@ div a#backToTop {
     
       #conteinerFilms {
 
-display: block;
+display: flex;
 
 
       }    

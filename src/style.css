@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -316,40 +316,59 @@ div a#backToTop {
     padding-top: 5%;
 }
 
-@media screen and (max-width: 400px){
-   
-    .wrapTarget {
-        margin: 20%;
-          }
-   
-   
+@media screen and (max-width: 400px) {
+
+
     .target {
-    width: 260px;
-    height: 350px;
-    margin: 20px 11px;
-    margin-left: 2%;
-    padding: 3%;
-  }
-  
- 
 
+        margin-bottom: 10%;
+        padding: 5%;
+    }
 
-  .btnNav {
-    width: 20px;
-    height: 20px;
-  }
+    .informationCard {
 
-  .popup, .popup:target {
-    height: 25%;
-    display: flex;
-  }
+        margin: 20px 11px;
 
-  body {
-    background: linear-gradient(to bottom, rgba(97, 198, 238, 0.678), rgba(40, 241, 241, 0.644));
-  }
- 
-    
+    }
+
+    .divBackToTop {
+
+        visibility: hidden;
+    }
+
+    #myModal {
+        /* width: 80%;
+        height: 90%; */
+        visibility: hidden;
+    }
+
+    .popup {
+        /* width: 75%;
+        align-items: center; */
+        visibility: hidden;
+    }
+
+    nav {
+        display: block;
+        position: relative;
+    }
+
+    header  {
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         
+    }
+
+    body {
+        background: linear-gradient(to bottom, rgba(97, 198, 238, 0.678), rgba(40, 241, 241, 0.644));
+    }
+
+    #conteinerFilms {
+        width: 100%;
+
+    }
 
 
- }
+}

@@ -24,11 +24,11 @@ Ghibli´s Word es una página web en donde el usuario puede interactuar, ordenan
 Las historias de usuarios desarrolladas a través de 4 sprint fueron:
 
 
-### 1. Como usuario de la web o fan de Studio Ghibli quiero visualizar los pósters de todas las animaciones y ordenarlas alfabeticamente para saber cuales son.
+ 1. Como usuario de la web o fan de Studio Ghibli quiero visualizar los pósters de todas las animaciones y ordenarlas alfabeticamente para saber cuales son.
 
-### 2. Como usuario de la web o fan de Studio Ghibli quiero ver el año de lanzamiento, el director y la sinopsis de cada films y poder filtrar por rango de año y director para saber más sobre ellos y tener mayor claridad de la información.
+ 2. Como usuario de la web o fan de Studio Ghibli quiero ver el año de lanzamiento, el director y la sinopsis de cada films y poder filtrar por rango de año y director para saber más sobre ellos y tener mayor claridad de la información.
 
-### 3. Como usuario de la web o fan de Studio Ghibli quiero realizar un filtrado eligiendo múltiples opciones, como años de lanzamiento y director para agrupar la información. 
+ 3. Como usuario de la web o fan de Studio Ghibli quiero realizar un filtrado eligiendo múltiples opciones, como años de lanzamiento y director para agrupar la información. 
 
 ![imagen](HistoriasDeUsuario.jpeg)
 

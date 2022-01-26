@@ -1,6 +1,5 @@
 # Data Lovers - Ghibli´s World
 
-## Índice
 
 * [1. Definición del producto](#1-Definición-del-producto)
 * [2. Historias de usuario](#2-Historias-de-usuario)
